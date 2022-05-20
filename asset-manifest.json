@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/seamoss-dev/static/css/main.576c9eb7.css",
+    "main.js": "/seamoss-dev/static/js/main.2c2dbfcc.js",
+    "static/media/S01_1047.jpeg": "/seamoss-dev/static/media/S01_1047.7bbd11de72a9d29e3e6d.jpeg",
+    "static/media/logo-temp.png": "/seamoss-dev/static/media/logo-temp.e689dbf4ac5be43d4e5c.png",
+    "index.html": "/seamoss-dev/index.html",
+    "main.576c9eb7.css.map": "/seamoss-dev/static/css/main.576c9eb7.css.map",
+    "main.2c2dbfcc.js.map": "/seamoss-dev/static/js/main.2c2dbfcc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.576c9eb7.css",
+    "static/js/main.2c2dbfcc.js"
+  ]
+}
