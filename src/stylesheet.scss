@@ -35,6 +35,18 @@
     user-select: none;
 }
 
+.center-text {
+    text-align: center !important;
+}
+
+.fancy-font {
+    font-family: var(--ff-title);
+}
+
+.bborder {
+    border: 2px solid blue;
+}
+
 //
 
 * {
@@ -108,16 +120,94 @@
     }
 }
 
+// about
+.about {
+    //margin-top: 15vh;
+    color: #121212;
+    box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+    h1 {
+        font-size: 3rem;
+    }
+    p, li {
+        color: #333333;
+    }
+    li {
+        font-size: 1.15rem;
+    }
+    .benefits {
+        background-color: #dddddd;
+        padding: 20% 10% 0 10%;
+        //box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+        border-radius: 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .col1 {
+            width: 70%;
+        }
+        .col2 {
+            width: 30%;
+            align-items: center;
+        }
+        .benefits-img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .what-is-it {
+        background-color: #dddddd;
+        padding: 20% 5% 0 5%;
+        border-radius: 0px;
+        //box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        h1, h3 {
+            width: 100%;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        .header-text {
+            font-size: 5rem;
+            margin-bottom: 5vh;
+        }
+        .applications-list {
+            margin-left: auto;
+            width: 70%;
+        }
+        .col1, .col2 {
+            padding: 5%;
+        }
+        .col1 {
+            width: 60%;
+        }
+        .col2 {
+            width: 40%;
+        }
+    }
+    .our-goal {
+        padding: 20% 10% 20% 10%;
+        h1 {
+            font-size: 4rem;
+        }
+    }
+}
+
 // Media queries
 
-@media only screen and (max-width: 50rem) {
+//@media only screen and (max-width: 50rem) {
+@media only screen and (max-width: 55rem) {
     .container {
         width: min(90%, 70.5rem);
     }
+
+    // landing
     .landing {
         margin-top: 5vh !important;
     }
     .landing-text {
+        text-align: center;
         h1 {
             font-size: 5rem !important;
         }
@@ -135,5 +225,38 @@
     }
     .nav-link {
         font-size: 1.5rem;
+    }
+
+    // about
+    .about {
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        li {
+            font-size: 1rem;
+        }
+        .benefits {
+            .col1 {
+                width: 100%;
+            }
+            .col2 {
+                width: 100%;
+            }
+        }
+        .what-is-it {
+            .header-text {
+                font-size: 3rem;
+            }
+            .applications-list {
+                width: 80%;
+            }
+            .col1 {
+                width: 100%;
+            }
+            .col2 {
+                width: 100%;
+            }
+        }
     }
 }

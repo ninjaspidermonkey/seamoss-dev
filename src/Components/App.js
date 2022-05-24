@@ -1,13 +1,13 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import NavbarHeader from './Navbar';
 import Button from 'react-bootstrap/Button';
+import doctorImg from '../Pictures/undraw_doctors_hwty.svg';
 
 const AppWrapper = styled.div`
-    background-color: #121212;
-    //border: 1px solid blue;
-    height: 200vh;
+    //background-color: #e2e2e2;
+    background-color: #dddddd;
 `;
 
 
@@ -30,8 +30,77 @@ const App = () => {
                         <Button className="btn2">Shop now</Button>
                     </div>
                 </div>
-
             </div>
+            <section className="about container">
+                <section className="benefits">
+                    <div className="col1">
+                        <h1 className="">Just a few benefits...</h1>
+                        <ul>
+                            <li>natural anti-inflammatory</li>
+                            <li>mucus emulsifier</li>
+                            <li>converts white fat to water</li>
+                            <li>supports healthy digestion & gut health</li>
+                            <li>anti-viral & anti-fungal properties</li>
+                            <li>strengthens immune system</li>
+                            <li>rejuvenates and moisturizes skin, treating acne and dark spots</li>
+                            <li>helps balance thyroid for hormone health</li>
+                            <li>improves sex quality</li>
+                            <li>great for cognitive recognition and brain health</li>
+                        </ul>
+                    </div>
+                    <div className="col2">
+                        <img className="benefits-img" src={doctorImg} alt="doctors with plant"/>
+                    </div>
+                </section>
+                <section className="what-is-it">
+                    <h1 className="header-text center-text">What is it?</h1>
+                    <div className="col1">
+                        <h2 className="center-text"><b>Chondrus Crispus</b></h2>
+                        <h3 className="center-text">(Irish Moss)</h3>
+                        <p>Chondrus Crispus is a natural red algae that grows along the rocky
+                            parts of the Atlantic coast of continental Europe and North America.
+                            Its color varies depending on sun exposure, but usually resembles
+                            a purplish color.
+                        </p>
+                        <p>Chondrus Crispus is known for the 92 essential vitamins and minerals
+                            that it provides the human body alongisde the benefits that come with it.
+                            Chondrus Crispus has been used for centuries and originally received the
+                            name "Irish Moss" from Ireland during the 1800s when the moss was used
+                            to survive the potato famine.
+                        </p>
+                    </div>
+                    <div className="col2">
+                        <h2 className="center-text"><u>Applications</u></h2>
+                        <ul className="applications-list">
+                            <li>smoothies</li>
+                            <li>teas</li>
+                            <li>shakes</li>
+                            <li>juices</li>
+                            <li>face/body care</li>
+                            <li>oatmeal</li>
+                            <li>stews</li>
+                            <li>gravies</li>
+                            <li>and more...</li>
+                        </ul>
+                    </div>
+                </section>
+                <section className="our-goal">
+                    <h1>Our Goal</h1>
+                    <p>Earth's Plug aims to create a healthier & more natural lifestyle for the body.
+                        The body thrives in a natural state, and a natural state makes it much easier to ingest 
+                        and apply nourishment that contributes to the longevity and vitality of our lives.
+                    </p>
+                    <p>The human body was not created to get sick. Our bodies are self-sustainable cars
+                        that operate well for longer distances when properly fueled and maintenanced.
+                    </p>
+                    <p>With that, Earth's Plug offers a variety of natural products that are hand-crafted
+                        with longevity and nourishment in mind. Our main product at the moment is a Purple
+                        sea moss gel that is entirely edible. We also provide other strands of sea moss,
+                        such as Jamaican sea moss or gracilaria. These natural products are superfoods
+                        in themselves and offer a plethora of benefits!
+                    </p>
+                </section>
+            </section>
 
         </AppWrapper>
     );
