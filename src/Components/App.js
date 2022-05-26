@@ -4,12 +4,23 @@ import styled from 'styled-components';
 import NavbarHeader from './Navbar';
 import Button from 'react-bootstrap/Button';
 import doctorImg from '../Pictures/undraw_doctors_hwty.svg';
+import { BsArrowUp } from 'react-icons/bs';
 
 const AppWrapper = styled.div`
-    //background-color: #e2e2e2;
     background-color: #dddddd;
-`;
 
+    .scroll-top-btn {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+        width: 10%;
+        height: 5%;
+        margin: 0 2.5% 2.5% 0;
+        color: black;
+        background-color: transparent;
+    }
+`;
 
 const App = () => {
 
@@ -23,7 +34,7 @@ const App = () => {
                     <div className="landing-text">
                         <h1 className="unselectable">Feel better.</h1>
                         <h4>Your body is composed of <b>102</b> vitamins and minerals.</h4>
-                        <h4>Our Sea Moss contains <b>92</b> of those essential vitamins and minerals.</h4>
+                        <h4>Earth's Plug's Chondrus Crispus contains <b>92</b> of those essential vitamins and minerals.</h4>
                     </div>
                     <div className="landing-btns">
                         <Button className="btn1">Learn more</Button>
@@ -46,6 +57,7 @@ const App = () => {
                             <li>helps balance thyroid for hormone health</li>
                             <li>improves sex quality</li>
                             <li>great for cognitive recognition and brain health</li>
+                            <li>and more...</li>
                         </ul>
                     </div>
                     <div className="col2">
@@ -94,14 +106,15 @@ const App = () => {
                         that operate well for longer distances when properly fueled and maintenanced.
                     </p>
                     <p>With that, Earth's Plug offers a variety of natural products that are hand-crafted
-                        with longevity and nourishment in mind. Our main product at the moment is a Purple
-                        sea moss gel that is entirely edible. We also provide other strands of sea moss,
-                        such as Jamaican sea moss or gracilaria. These natural products are superfoods
-                        in themselves and offer a plethora of benefits!
+                        with longevity and nourishment in mind. Our main product at the moment is a purple
+                        sea moss gel that can be applied to the skin and is also entirely edible. We also 
+                        provide other strands of sea moss, such as Jamaican sea moss or gracilaria. These natural 
+                        products are superfoods in and of themselves and offer a plethora of benefits!
                     </p>
                 </section>
             </section>
 
+            { /*<BsArrowUp className="scroll-top-btn" onClick={ () => window.scrollTo(0, 0) } /> */}
         </AppWrapper>
     );
 };

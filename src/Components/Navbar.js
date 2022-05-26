@@ -28,14 +28,13 @@ const NavbarHeaderWrapper = styled.div`
         height: 50px;
         width: 50px;
     }
-
 `;
 
 const NavbarHeader = () => {
 
     return (
         <NavbarHeaderWrapper>
-            <Navbar bg="dark" expand="lg">
+            <Navbar id="navbar" className="navbar-dark" bg="dark" expand="lg">
                 <Navbar.Brand>
                     <img className="logo" src={logo} alt="Earth's Plug logo"/>
                 </Navbar.Brand>
